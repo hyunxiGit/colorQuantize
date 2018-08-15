@@ -6,3 +6,5 @@ quantizeImage/x64/
 blendBase.jpg
 new.jpg
 water.jpg
+*.jpg
+*.png
