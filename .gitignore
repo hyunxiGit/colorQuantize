@@ -1,6 +1,7 @@
 .vs/
 Debug/
 x64/
+quantizeImage/Release/
 quantizeImage/Debug/
 quantizeImage/x64/
 blendBase.jpg
