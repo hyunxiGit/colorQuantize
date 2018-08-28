@@ -24,6 +24,18 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="getExtremCol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="octTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mediumCut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -33,6 +45,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="medium.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="getExtremCol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="octTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mediumCut.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

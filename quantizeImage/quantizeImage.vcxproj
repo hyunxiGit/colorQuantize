@@ -167,12 +167,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="common.h" />
+    <ClInclude Include="getExtremCol.h" />
     <ClInclude Include="medium.h" />
+    <ClInclude Include="mediumCut.h" />
+    <ClInclude Include="octTree.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="getExtremCol.cpp" />
     <ClCompile Include="medium.cpp" />
+    <ClCompile Include="mediumCut.cpp" />
+    <ClCompile Include="octTree.cpp" />
     <ClCompile Include="quantizeImage.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
