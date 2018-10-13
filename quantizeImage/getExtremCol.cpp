@@ -137,6 +137,6 @@ int findImageExtream(Image image, short q)
 		cout << extrColVec.at(i) << endl;
 	}
 
-	string p1 = "D:/work/quantizeImage/palette_extreme.png";
+	string p1 = "C:/MyGit/colorQuantize/GalileoTomb2.png";
 	drawPallete(extrColVec, p1);
 }
