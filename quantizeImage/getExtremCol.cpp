@@ -121,7 +121,7 @@ RGB findmidCol(vector <RGBCount> rgbCountVect)
 	return result;
 }
 
-int findImageExtream(Image image, short q)
+int findImageExtream(Image image, short q, string palletepath)
 {
 	vector <RGBCount> rgbCountVect;
 	findColor(image, rgbCountVect);
@@ -137,6 +137,8 @@ int findImageExtream(Image image, short q)
 		cout << extrColVec.at(i) << endl;
 	}
 
-	string p1 = "C:/MyGit/colorQuantize/GalileoTomb2.png";
-	drawPallete(extrColVec, p1);
+	//string p1 = "C:/MyGit/tempTexture/GalileoTomb2.png";
+	drawPallete(extrColVec, palletepath);
+
+	return 0;
 }

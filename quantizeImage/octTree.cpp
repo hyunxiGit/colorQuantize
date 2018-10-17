@@ -59,13 +59,12 @@ int octTreeQuant(Image myImg, int target, std::vector<RGB> & myCols)
 	return 1;
 }
 
-int findImageOctTreem(Image image)
+int findImageOctTreem(Image image , short q , string palletepath)
 {
 	vector<RGB> myCols;
-	octTreeQuant(image, 8, myCols);
+	octTreeQuant(image, q, myCols);
 
-	string p1 = "D:/work/quantizeImage/palette_oct.png";
-	drawPallete(myCols, p1);
+	drawPallete(myCols, palletepath);
 
 	return 0;
 }

@@ -74,7 +74,7 @@ int findColor_w(Image myImg, vector<RGB> & myCols, vector<word> & myCol_w)
 	return findNumber;
 }
 
-int medianCut(Image image)
+int medianCut(Image image , short q , string palletepath)
 {
 	std::vector<RGB> cols;
 	std::vector<RGB> result;
@@ -102,7 +102,7 @@ int medianCut(Image image)
 	//}
 
 	byte myColMap[16][3];
-	int c = MedianCut(_his, myColMap, myColor, 8);
+	int c = MedianCut(_his, myColMap, myColor, q);
 	for (i = 0; i < c; i++)
 	{
 		RGB newCOL(myColMap[i][0], myColMap[i][1], myColMap[i][2]);
@@ -110,7 +110,6 @@ int medianCut(Image image)
 		result.push_back(newCOL);
 	}
 
-	string p1 = "D:/work/quantizeImage/palette_medium.png";
-	drawPallete(result, p1);
+	drawPallete(result, palletepath);
 
 }
